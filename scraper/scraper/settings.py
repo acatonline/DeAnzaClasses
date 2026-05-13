@@ -23,6 +23,14 @@ DOWNLOADER_MIDDLEWARES = {
     "scraper.middlewares.ScraperDownloaderMiddleware": 543,
 }
 
+# settings.py
+DOWNLOAD_DELAY = 1
+AUTOTHROTTLE_ENABLED = True
+
+AUTOTHROTTLE_START_DELAY = 1
+AUTOTHROTTLE_MAX_DELAY = 10
+CONCURRENT_REQUESTS_PER_DOMAIN = 1
+
 ROBOTSTXT_OBEY = False
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
